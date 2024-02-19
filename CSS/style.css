@@ -109,6 +109,10 @@ nav ul a:hover::after {
     width: 100%;
 }
 
+nav ul img {
+    display: none;
+}
+
 
 
 /* MENU MOBILE */
@@ -126,6 +130,8 @@ nav .close-icon {
     color: white;
     cursor: pointer;
 }
+
+
 
 
 .banner {
@@ -479,7 +485,7 @@ nav .close-icon {
         position: fixed;
         top: 0;
         left: 0;
-        background: #184b88;
+        background: #8e6ed0;
         width: 100%;
         height: 100%;
         flex-direction: column;
@@ -504,6 +510,11 @@ nav .close-icon {
         position: absolute;
         top: 46px;
         right: 28px;
+    }
+
+    nav ul img {
+        display: block;
+        margin-bottom: 50px;
     }
 
     /* PÁGINA HOME RESPONSIVO */
@@ -539,6 +550,7 @@ nav .close-icon {
     .faca-mais .faca-mais-text,
     .faca-mais .faca-mais-img{
         width: 100%;
+        height: auto;
     }
 
     .depoimentos .card-item{
