@@ -23,10 +23,10 @@ function enviarFormWhatsApp() {
 
     var numeroTelefone = "+5516992924468";
 
-    var mensagemWhatsApp = "Nome: " + nome + "<br>";
-    mensagemWhatsApp += "Email: " + email + "<br>";
-    mensagemWhatsApp += "Assunto: " + assunto + "<br>";
-    mensagemWhatsApp += "Mensagem: " + mensagem;
+    var mensagemWhatsApp = "*Nome:* " + nome + "\n";
+    mensagemWhatsApp += "*Email:* " + email + "\n";
+    mensagemWhatsApp += "*Assunto:* " + assunto + "\n";
+    mensagemWhatsApp += "*Mensagem:* \n" + mensagem;
 
     var url = "https://api.whatsapp.com/send?phone=" + encodeURIComponent(numeroTelefone) + "&text=" + encodeURIComponent(mensagemWhatsApp);
 
