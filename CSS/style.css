@@ -17,6 +17,7 @@ section, footer {
 }
 
 h3{
+    color: #171717b2;
     font-size: 50px;
 }
 
@@ -30,8 +31,21 @@ p{
     padding: 0 5%;
 }
 
+.btn-static {
+    background-color: #8e6ed0;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+
+.btn-static:hover{
+    background-color: #6f56a2;
+}
+
 .btn {
-    background-color: #4f9cf9;
     color: white;
     padding: 15px 20px;
     border-radius: 10px;
@@ -44,13 +58,11 @@ p{
     animation: animate-outline 1s ease-out infinite;
 }
 
-.btn:hover {
-    background-color: #3580db;
-}
+
 
 @keyframes animate-outline {
     from{
-        outline: 0px solid #4f9bf98a;
+        outline: 0px solid #8e6ed0;
     }
     to{
         outline: 15px solid #4f9bf900;
@@ -85,7 +97,7 @@ nav ul a {
 
 nav ul a:not(.btn)::after {
     content: "";
-    background-color: #4f9cf9;
+    background-color: #8e6ed0;
     height: 3px;
     width: 0%;
     display: block;
@@ -186,7 +198,7 @@ nav .close-icon {
 }
 
 .depoimentos .card-item {
-    background-color: #d3e6fd;
+    background-color: #dacef1;
     margin: 15px;
     border-radius: 14px;
     text-align: center;
@@ -220,14 +232,14 @@ nav .close-icon {
 }
 
 .depoimentos .card-item .estrelas i {
-    color: #4f9cf9;
+    color: #8e6ed0;
     margin-top: 15px;
     font-size: 20px;
     transition: 0.5s;
 }
 
 .depoimentos .card-item:hover {
-    background-color: #4f9cf9;
+    background-color: #8e6ed0;
     margin-top: -5px;
 }
 
@@ -256,12 +268,12 @@ nav .close-icon {
 /* FOOTER */
 
 .footer {
-    background-color: #4f9cf9;
+    background-color: #171717b2;
     text-align: center;
 }
 
 .footer i {
-    color: #4f9cf9;
+    color: #8e6ed0;
     font-size: 19px;
     background-color: white;
     border-radius: 10px;
